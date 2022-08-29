@@ -15,6 +15,7 @@
 		D6D4622528BD717A00210EA8 /* MyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622428BD717A00210EA8 /* MyRegistry.swift */; };
 		D6D4622728BD723500210EA8 /* CatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622628BD723500210EA8 /* CatRatingView.swift */; };
 		D6D4622928BD744200210EA8 /* NavFavoriteModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */; };
+		D6D4622B28BD74C400210EA8 /* MyLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622A28BD74C400210EA8 /* MyLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D6D4622428BD717A00210EA8 /* MyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRegistry.swift; sourceTree = "<group>"; };
 		D6D4622628BD723500210EA8 /* CatRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRatingView.swift; sourceTree = "<group>"; };
 		D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavFavoriteModifier.swift; sourceTree = "<group>"; };
+		D6D4622A28BD74C400210EA8 /* MyLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D6D4622428BD717A00210EA8 /* MyRegistry.swift */,
 				D6D4622628BD723500210EA8 /* CatRatingView.swift */,
 				D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */,
+				D6D4622A28BD74C400210EA8 /* MyLoadingView.swift */,
 				D6D4621728BD5E5E00210EA8 /* Assets.xcassets */,
 				D6D4621928BD5E5E00210EA8 /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 				D6D4621628BD5E5D00210EA8 /* ContentView.swift in Sources */,
 				D6D4621428BD5E5D00210EA8 /* LVNTutorialAppApp.swift in Sources */,
 				D6D4622928BD744200210EA8 /* NavFavoriteModifier.swift in Sources */,
+				D6D4622B28BD74C400210EA8 /* MyLoadingView.swift in Sources */,
 				D6D4622728BD723500210EA8 /* CatRatingView.swift in Sources */,
 				D6D4622528BD717A00210EA8 /* MyRegistry.swift in Sources */,
 			);

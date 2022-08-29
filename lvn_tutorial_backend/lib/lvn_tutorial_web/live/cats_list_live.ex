@@ -30,6 +30,7 @@ defmodule LvnTutorialWeb.CatsListLive do
   ]
 
   def mount(_params, _session, socket) do
+    Process.sleep(2000)
     {:ok, assign(socket, cats_and_favorites: get_cats_and_favorites())}
   end
 

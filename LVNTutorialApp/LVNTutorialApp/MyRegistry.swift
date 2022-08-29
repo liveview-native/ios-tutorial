@@ -30,4 +30,16 @@ struct MyRegistry: CustomRegistry {
                 .modifier(NavFavoriteModifier(value: value, context: context))
         }
     }
+    
+    static func loadingView(for url: URL, state: LiveViewCoordinator<MyRegistry>.State) -> some View {
+        if case .connectionFailed(let error) = state {
+            VStack {
+                Text("⚠️😿")
+                    .font(.largeTitle)
+                Text(error.localizedDescription)
+            }
+        } else {
+            MyLoadingView()
+        }
+    }
 }
