@@ -14,6 +14,7 @@
 		D6D4622328BD5F7F00210EA8 /* PhoenixLiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = D6D4622228BD5F7F00210EA8 /* PhoenixLiveViewNative */; };
 		D6D4622528BD717A00210EA8 /* MyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622428BD717A00210EA8 /* MyRegistry.swift */; };
 		D6D4622728BD723500210EA8 /* CatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622628BD723500210EA8 /* CatRatingView.swift */; };
+		D6D4622928BD744200210EA8 /* NavFavoriteModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D6D4621A28BD5E5E00210EA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6D4622428BD717A00210EA8 /* MyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRegistry.swift; sourceTree = "<group>"; };
 		D6D4622628BD723500210EA8 /* CatRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRatingView.swift; sourceTree = "<group>"; };
+		D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavFavoriteModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D6D4621528BD5E5D00210EA8 /* ContentView.swift */,
 				D6D4622428BD717A00210EA8 /* MyRegistry.swift */,
 				D6D4622628BD723500210EA8 /* CatRatingView.swift */,
+				D6D4622828BD744200210EA8 /* NavFavoriteModifier.swift */,
 				D6D4621728BD5E5E00210EA8 /* Assets.xcassets */,
 				D6D4621928BD5E5E00210EA8 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 			files = (
 				D6D4621628BD5E5D00210EA8 /* ContentView.swift in Sources */,
 				D6D4621428BD5E5D00210EA8 /* LVNTutorialAppApp.swift in Sources */,
+				D6D4622928BD744200210EA8 /* NavFavoriteModifier.swift in Sources */,
 				D6D4622728BD723500210EA8 /* CatRatingView.swift in Sources */,
 				D6D4622528BD717A00210EA8 /* MyRegistry.swift in Sources */,
 			);
