@@ -9,7 +9,7 @@ import SwiftUI
 import PhoenixLiveViewNative
 
 struct ContentView: View {
-    @State var coordinator: LiveViewCoordinator<EmptyRegistry> = {
+    @State var coordinator: LiveViewCoordinator<MyRegistry> = {
         var config = LiveViewConfiguration()
         config.navigationMode = .enabled
         return LiveViewCoordinator(URL(string: "http://localhost:4000/cats")!, config: config)
