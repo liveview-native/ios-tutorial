@@ -17,7 +17,10 @@ defmodule LvnTutorialWeb.Router do
   scope "/", LvnTutorialWeb do
     pipe_through :browser
 
-    live "/cats", CatsListLive
+    live_session :cats do
+      live "/cats", CatsListLive
+      live "/cats/:name", CatLive
+    end
   end
 
   # Other scopes may use custom stacks.
