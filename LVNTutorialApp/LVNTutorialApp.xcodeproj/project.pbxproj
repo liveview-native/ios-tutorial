@@ -11,6 +11,7 @@
 		D6D4621628BD5E5D00210EA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4621528BD5E5D00210EA8 /* ContentView.swift */; };
 		D6D4621828BD5E5E00210EA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D4621728BD5E5E00210EA8 /* Assets.xcassets */; };
 		D6D4621B28BD5E5E00210EA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D4621A28BD5E5E00210EA8 /* Preview Assets.xcassets */; };
+		D6D4622328BD5F7F00210EA8 /* PhoenixLiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = D6D4622228BD5F7F00210EA8 /* PhoenixLiveViewNative */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D4622328BD5F7F00210EA8 /* PhoenixLiveViewNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LVNTutorialApp;
+			packageProductDependencies = (
+				D6D4622228BD5F7F00210EA8 /* PhoenixLiveViewNative */,
+			);
 			productName = LVNTutorialApp;
 			productReference = D6D4621028BD5E5D00210EA8 /* LVNTutorialApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = D6D4620728BD5E5D00210EA8;
+			packageReferences = (
+				D6D4622128BD5F7F00210EA8 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */,
+			);
 			productRefGroup = D6D4621128BD5E5D00210EA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6D4622128BD5F7F00210EA8 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/liveviewnative/liveview-client-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6D4622228BD5F7F00210EA8 /* PhoenixLiveViewNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6D4622128BD5F7F00210EA8 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */;
+			productName = PhoenixLiveViewNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6D4620828BD5E5D00210EA8 /* Project object */;
 }
