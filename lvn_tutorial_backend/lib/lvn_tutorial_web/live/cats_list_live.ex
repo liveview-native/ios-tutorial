@@ -3,13 +3,7 @@ defmodule LvnTutorialWeb.CatsListLive do
   require EEx
   alias LvnTutorial.FavoritesStore
 
-  EEx.function_from_file(
-    :def,
-    :render,
-    "lib/lvn_tutorial_web/live/cats_list_live.ios.heex",
-    [:assigns],
-    engine: Phoenix.LiveView.HTMLEngine
-  )
+  @dir Path.rootname(__ENV__.file)
 
   @cats [
     "Clenil",

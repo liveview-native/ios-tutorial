@@ -1,0 +1,5 @@
+<vstack nav-title={@name} nav-favorite={to_string(@favorite)}>
+  <.image src={"/images/cats/#{@name}.jpg"} width={300} height={300} platform={@platform} />
+  <.cat_rating score={@score} platform={@platform} />
+</vstack>
+ 

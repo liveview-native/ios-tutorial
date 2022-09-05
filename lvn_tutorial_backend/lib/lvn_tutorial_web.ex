@@ -95,6 +95,9 @@ defmodule LvnTutorialWeb do
 
       import LvnTutorialWeb.ErrorHelpers
       alias LvnTutorialWeb.Router.Helpers, as: Routes
+
+      import LvnTutorialWeb.GenericComponents
+      import LvnTutorialWeb.CatComponents
     end
   end
 

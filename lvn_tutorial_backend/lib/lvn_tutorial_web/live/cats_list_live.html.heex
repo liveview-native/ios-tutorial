@@ -1,0 +1,12 @@
+<list nav-title="Cats!">
+  <%= for {name, favorite} <- @cats_and_favorites do %>
+    <.link id={name} href={Routes.live_path(@socket, LvnTutorialWeb.CatLive, name)} platform={@platform} >
+      <hstack>
+        <.image src={"/images/cats/#{name}.jpg"} width={100} height={100} platform={@platform} />
+        <text><%= name %></text>
+        <spacer />
+        <.cat_voting name={name} favorite={favorite} platform={@platform} />
+      </hstack>
+    </.link>
+  <% end %>
+</list> 

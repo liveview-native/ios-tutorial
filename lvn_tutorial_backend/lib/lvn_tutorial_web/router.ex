@@ -17,7 +17,7 @@ defmodule LvnTutorialWeb.Router do
   scope "/", LvnTutorialWeb do
     pipe_through :browser
 
-    live_session :cats do
+    live_session :cats, on_mount: [{LvnTutorialWeb.InitAssigns, :default}] do
       live "/cats", CatsListLive
       live "/cats/:name", CatLive
     end
