@@ -13,9 +13,10 @@ defmodule LvnTutorial.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: LvnTutorial.PubSub},
       # Start the Endpoint (http/https)
-      LvnTutorialWeb.Endpoint
+      LvnTutorialWeb.Endpoint,
       # Start a worker by calling: LvnTutorial.Worker.start_link(arg)
       # {LvnTutorial.Worker, arg}
+      LvnTutorial.FavoritesStore
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
