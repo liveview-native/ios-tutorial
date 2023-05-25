@@ -22,4 +22,16 @@ struct MyRegistry: RootRegistry {
             try NavFavoriteModifier(from: decoder)
         }
     }
+    
+    static func loadingView(for url: URL, state: LiveSessionState) -> some View {
+        if case .connectionFailed(let error) = state {
+            VStack {
+                Text("⚠️😿")
+                    .font(.largeTitle)
+                Text(error.localizedDescription)
+            }
+        } else {
+            MyLoadingView()
+        }
+    }
 }
