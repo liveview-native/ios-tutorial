@@ -11,7 +11,7 @@ config :live_view_native, :platforms, [LiveViewNativeSwiftUi.Platform]
 
 config :live_view_native, LiveViewNativeSwiftUi.Platform,
   app_name: "LVNTutorial",
-  custom_modifiers: []
+  custom_modifiers: [nav_favorite: LvnTutorialWeb.Modifiers.NavFavorite]
 
 # Configures the endpoint
 config :lvn_tutorial, LvnTutorialWeb.Endpoint,
