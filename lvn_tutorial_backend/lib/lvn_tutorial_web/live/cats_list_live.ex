@@ -31,16 +31,18 @@ defmodule LvnTutorialWeb.CatsListLive do
 
   def render(%{platform_id: :swiftui} = assigns) do
     ~Z"""
-    <List>
+    <List modifiers={navigation_title(@native, title: "Cats!")}>
       <%= for {name, favorite} <- @cats_and_favorites do %>
-        <HStack id={name}>
-          <AsyncImage url={"/images/cats/#{name}.jpg"} modifiers={frame(@native, width: 100, height: 100)} />
-          <Text><%= name %></Text>
-          <Spacer />
-          <Button phx-click="toggle-favorite" phx-value-name={name}>
-            <Image system-name={if favorite, do: "star.fill", else: "star"} symbol-color={if favorite, do: "#f3c51a", else: "#000000"} />
-          </Button>
-        </HStack>
+        <NavigationLink id={name} destination={"/cats/#{name}"}>
+          <HStack>
+            <AsyncImage url={"/images/cats/#{name}.jpg"} modifiers={frame(@native, width: 100, height: 100)} />
+            <Text><%= name %></Text>
+            <Spacer />
+            <Button phx-click="toggle-favorite" phx-value-name={name}>
+              <Image system-name={if favorite, do: "star.fill", else: "star"} symbol-color={if favorite, do: "#f3c51a", else: "#000000"} />
+            </Button>
+          </HStack>
+        </NavigationLink>
       <% end %>
     </List>
     """swiftui
